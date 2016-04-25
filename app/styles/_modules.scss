@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  width: 100%;
+  background-image: url("../assets/images/background.jpg");
+}
+.container {
+  h1, h2, li{
+    color: white;
+    display: inline-block;
+
+
+  }
+  input {
+    margin-left: 50px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 0;
+    text-align: center;
+    width: 80px;
+  }
+  h2 {
+    font-size: 1rem;
+    font-style: italic;
+    float: left;
+  }
+  .nav {
+    display: inline-block;
+    background-color: gray;
+    width: 300px;
+    margin: 40px 10px;
+    border-radius: 10px;
+    
+
+  }
+}
