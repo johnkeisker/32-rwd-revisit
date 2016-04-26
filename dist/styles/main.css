@@ -1,28 +1,148 @@
 body {
   margin: 0;
-  width: 100%;
+  font-family: Verdana;
+  background-position: top center;
   background-image: url("../assets/images/background.jpg"); }
 
-.container h1, .container h2, .container li {
-  color: white;
-  display: inline-block; }
-
-.container input {
-  margin-left: 50px;
-  border-radius: 5px;
-  border-style: none;
-  padding: 10px 0;
-  text-align: center;
-  width: 80px; }
-
-.container h2 {
-  font-size: 1rem;
-  font-style: italic;
-  float: left; }
-
-.container .nav {
-  display: inline-block;
-  background-color: gray;
-  width: 300px;
-  margin: 40px 10px;
-  border-radius: 10px; }
+.container {
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
+  .container header {
+    color: white; }
+  .container .top-header {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .container h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold; }
+  .container input {
+    border-radius: 5px;
+    border-style: none;
+    padding: 8px 10px; }
+    @media screen and (min-width: 650px) {
+      .container input {
+        display: inline; } }
+  .container h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: Verdana;
+    font-style: italic; }
+  .container .nav {
+    display: flex;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    margin: 20px 0 0;
+    justify-content: space-between; }
+  .container .nav-bar {
+    background: linear-gradient(to right, #6a6a6a, #b9b9b9);
+    border-radius: 8px; }
+  .container ul {
+    padding-left: 20px; }
+    .container ul li {
+      display: inline-block;
+      margin: 10px 10px 10px 0;
+      color: white;
+      font-family: Verdana;
+      font-weight: bold; }
+  .container .post {
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px 0 0; }
+    @media screen and (min-width: 650px) {
+      .container .post {
+        width: calc(70% - 2%);
+        margin-right: 2%;
+        float: left; } }
+    .container .post .container {
+      width: 94%; }
+    .container .post--title {
+      margin: 0;
+      font-size: 1.8rem;
+      padding: 10px 0; }
+    .container .post--info {
+      margin: 10px 0;
+      padding: 0;
+      font-size: 0.9rem;
+      font-family: Verdana;
+      font-weight: normal;
+      color: #6a6a6a; }
+      .container .post--info-seperator {
+        font-style: italic; }
+      .container .post--info-category {
+        color: #4F76CC;
+        font-family: Verdana;
+        text-decoration: none; }
+    .container .post--image {
+      width: 100%; }
+    .container .post--content {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      font-weight: 400;
+      padding: 0 0 20px; }
+  .container .sidebar {
+    margin: 20px 0 0;
+    background-color: white;
+    border-radius: 8px; }
+    @media screen and (min-width: 650px) {
+      .container .sidebar {
+        width: 30%;
+        float: left; } }
+    .container .sidebar .container {
+      padding: 5px 0 20px; }
+    .container .sidebar--title {
+      margin-left: 10px;
+      padding: 10px 0; }
+    .container .sidebar--option {
+      border-top: 1px solid #ddd;
+      padding: 10px 0; }
+      .container .sidebar--option a {
+        color: #2973CB;
+        text-decoration: none;
+        font-family: Verdana;
+        font-weight: 600; }
+      .container .sidebar--option span {
+        color: #666; }
+  .container .photos {
+    margin: 20px 0 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    zoom: 1; }
+    @media screen and (min-width: 650px) {
+      .container .photos {
+        width: 30%;
+        float: left; } }
+    .container .photos .container {
+      padding: 5px 0; }
+    .container .photos--title {
+      margin-left: 10px;
+      padding: 10px 0; }
+    .container .photos--photo {
+      width: calc(20% - 4%);
+      margin: 10px 5% 0 0;
+      float: left; }
+      .container .photos--photo:last-child {
+        padding: 0 0 20px; }
+      .container .photos--photo:nth-child(5n) {
+        margin-right: 5px; }
+      .container .photos--photo img {
+        width: 100%; }
+  .container footer {
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+    font-weight: 200;
+    clear: both; }
+    @media screen and (min-width: 650px) {
+      .container footer {
+        padding: 10px 0 0; } }
+    .container footer .container {
+      margin: 20px 0 30px; }

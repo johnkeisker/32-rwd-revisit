@@ -6,25 +6,113 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+
     <div class="container">
-      <div>
-        <h1>Adaptive Design</h1>
-        <input type="text" name="Search" placeholder="Search">
+
+      <header>
+        <div>
+          <h1>Adaptive Design</h1>
+          <input type="text" name="Search" placeholder="Search">
+        </div>
+        <h2>With Media Queries</h2>
+      </header>
+
+      <nav>
+        <ul class="nav-bar">
+          <li>Home</li>
+          <li>MDN</li>
+          <li>Stack Overflow</li>
+          <li>Google</li>
+        </ul>
+        <input type="text" placeholder="Search">
+      </nav>
+
+      <div class="post">
+        <div class="container">
+          <h2 class="post--title">Example post title</h2>
+          <h3 class="post--info">
+            <span class="post--info-date">April 8, 2016</span>
+            <span class="post--info-seperator">in</span>
+            <a href="#" class="post--info-category">Example Category</a>
+          </h3>
+          <img class="post--image" src="./assets/images/post-image.jpg">
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium quis est iste tempore, eaque adipisci. Soluta doloremque, consequatur labore, dolorem id aspernatur, magnam odio vero aliquam, quis ab provident.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum possimus, tempore exercitationem laudantium ab dolorem maxime consectetur voluptatum neque est ut quo consequatur assumenda explicabo officiis, cupiditate qui modi quis.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <h2>With Media Queries</h2>
+      <div class="sidebar">
+        <div class="container">
+          <h3 class="sidebar--title">Sidebar</h3>
 
-      <div class="nav">
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>MDN</li>
-            <li>Stack Overflow</li>
-            <li>Google</li>
+          <ul class="sidebar--options">
+            <li class="sidebar--option">
+              <a href="#">CSS</a>
+              <span> (3)</span>
+            </li>
+            <li class="sidebar--option">
+              <a href="#">Angular</a>
+              <span> (23)</span>
+            </li>
+            <li class="sidebar--option">
+              <a href="#">Javascript</a>
+              <span> (18)</span>
+            </li>
           </ul>
-        </nav>
+
+        </div>
       </div>
+
+      <div class="photos">
+        <div class="container">
+          <h3 class="photos--title">Photos</h3>
+
+          <ul class="photos--gallery">
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_1.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_2.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_3.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_4.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_5.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_6.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_7.jpg">
+            </li>
+            <li class="photos--photo">
+              <img src="./assets/images/sidebar_8.jpg">
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <footer>
+
+        <div class="container">
+          <span>All Rights Reserved. &copy; 2016</span>
+        </div>
+
+      </footer>
+
+
     </div>
+
+
 
 
   </body>
