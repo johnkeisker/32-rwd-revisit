@@ -1,3 +1,12 @@
+.search {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+  @media screen and (min-width: 650px) {
+    .search {
+      top: 5px;
+      right: 5px; } }
+
 body {
   margin: 0;
   font-family: Verdana;
@@ -35,6 +44,16 @@ body {
     font-style: italic;
     font-family: Verdana;
     font-style: italic; }
+  .container nav ul {
+    padding-left: 20px;
+    display: inline-block;
+    margin: 0; }
+    .container nav ul li {
+      display: inline-block;
+      margin: 10px 10px 10px 0;
+      color: white;
+      font-family: Verdana;
+      font-weight: bold; }
   .container .nav {
     display: flex;
     border-radius: 8px;
@@ -45,14 +64,9 @@ body {
   .container .nav-bar {
     background: linear-gradient(to right, #6a6a6a, #b9b9b9);
     border-radius: 8px; }
-  .container ul {
-    padding-left: 20px; }
-    .container ul li {
-      display: inline-block;
-      margin: 10px 10px 10px 0;
-      color: white;
-      font-family: Verdana;
-      font-weight: bold; }
+    @media screen and (min-width: 650px) {
+      .container .nav-bar {
+        position: relative; } }
   .container .post {
     background-color: white;
     border-radius: 8px;

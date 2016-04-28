@@ -1,3 +1,14 @@
+.search {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  @media screen and (min-width: 650px) {
+    top: 5px;
+    right: 5px;
+  }
+}
+
 body {
   margin: 0;
   font-family: Verdana;
@@ -41,20 +52,11 @@ body {
     font-family: Verdana;
     font-style: italic;
   }
-  .nav {
-    display: flex;
-    border-radius: 8px;
-    color: white;
-    font-size: 0.9rem;
-    margin: 20px 0 0;
-    justify-content: space-between;
-  }
-  .nav-bar {
-    background: linear-gradient(to right, #6a6a6a, #b9b9b9);
-    border-radius: 8px;
-  }
-  ul {
+
+  nav ul {
     padding-left: 20px;
+    display: inline-block;
+    margin: 0;
     li {
       display: inline-block;
       margin: 10px 10px 10px 0;
@@ -64,6 +66,25 @@ body {
 
     }
   }
+  .nav {
+    display: flex;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    margin: 20px 0 0;
+    justify-content: space-between;
+
+  }
+  .nav-bar {
+    background: linear-gradient(to right, #6a6a6a, #b9b9b9);
+    border-radius: 8px;
+
+    @media screen and (min-width: 650px) {
+      position: relative;
+    }
+
+  }
+
   .post {
     background-color: white;
     border-radius: 8px;
